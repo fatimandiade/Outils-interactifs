@@ -1,1 +1,77 @@
+body{
+    text-align: center ;
+    background-color: white
+    ;
+}
+h1{                          
+    color: black;
+    font-size: 30px;
+    margin-bottom:30px;
+}
+#ecran{
+    background-color: black;
+    /*largeur*/
+    width: 200px;
+    /*hauteur*/
+    height: 50px;
+    /*centre l"écran horizentalement*/
+    margin: 0 auto 50px auto ;
+    /*taille du chiffre affiché*/
+    font-size: 25px; 
+    margin-bottom:60px;
+    margin: 20px;
+    border: none;
+    padding: 10px;
+    padding-top: 5px;
+    color: white;
 
+}
+
+button{
+    background-color: #333333;
+    color: white;
+    /*largeur*/
+    width: 50px;
+    /*hauteur*/
+    height: 50px;
+    /*centre l"écran horizentalement*/
+    margin: 5px;
+    /*taille du chiffre affiché*/
+    font-size: 20px; 
+    border:none;
+    border-radius: 50%;
+
+}
+/*donne une couleur lorsqu 'on clique sur le bouton avec hover qui selectionne le bouton lorsque la souris passe dessuss*/
+button:active {
+    background-color: whitesmoke;
+}
+
+
+#boutons{
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    gap: 5px;
+    justify-content: center;
+}
+
+#boutons button:nth-child(4n){
+    background-color:orange;
+}
+
+#boutons button:nth-child(4n):active{
+    background-color:whitesmoke;
+}
+
+#calculatrice{
+     background-color: black;
+    /*largeur*/
+    width: 260px;
+    /*hauteur*/
+    height:450px;
+    /*centre l"écran horizentalement*/
+    margin: auto;
+    border: 2px solid black;
+    border-radius:25px;
+    padding: 30px 20px 20px 20px ;
+}
